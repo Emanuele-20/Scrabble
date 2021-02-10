@@ -1,0 +1,14 @@
+{
+  "name": "scrabble2",
+  "version": "1.0.0",
+  "description": "Scrabble",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Emanuele",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
