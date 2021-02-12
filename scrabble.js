@@ -1,27 +1,15 @@
 class Scrabble{
     
-     constructor(value){
-        this.value = value
+     constructor(string){
+        this.string = string
     };
 
-
-
-    // score(word) {
-    //     let array = []
-    //     if ((typeof word !== " ") || (word == '/\t\n/') || (typeof word == null)){
-    //         return "here"
-    //     } else {
-    //         array.push(word)
-    //         return array
-    //     }
-    // }
-
     score(){
-        if ((this.value == "") || (this.value == '/\t\n/') || (this.value === null)){
+        if ((this.string == "") || (this.string == '/\t\n/') || (this.string === null)){
             return 0
-        } else if (this.value === "a"){
+        } else if (this.string === "a"){
             return 1
-        } else if (this.value === "f") {
+        } else if (this.string === "f") {
             return 4
         }
     }
