@@ -1,6 +1,6 @@
 class Scrabble{
     
-     constructor(string){
+    constructor(string){
         this.string = string
     };
 
@@ -18,8 +18,3 @@ class Scrabble{
 
 module.exports = Scrabble
 
-
-
-
-//const Scrabble = require('./scrabble.js')
-//scrabble = new Scrabble
