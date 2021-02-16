@@ -38,7 +38,7 @@ class Scrabble{
             return 0
         } else {
             for(let i = 0; i < this.string.length; i++ ){
-                let letter = this.string[i] //a
+                let letter = this.string[i] 
                 array.push(this.value[letter])
             }
             let result = array.reduce(function(a,b){
