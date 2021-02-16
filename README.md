@@ -18,28 +18,28 @@ Q, Z	|10
 
 ## Acceptance Criteria
 ```
-scrabble = Scrabble.new('')
+scrabble = new Scrabble('')
 scrabble.score # => 0
 
-scrabble = Scrabble.new(" \t\n")
+scrabble = new Scrabble(" \t\n")
 scrabble.score # => 0
 
-scrabble = Scrabble.new(nil)
+scrabble = new Scrabble(null)
 scrabble.score # => 0
 
-scrabble = Scrabble.new('a')
+scrabble = new Scrabble('a')
 scrabble.score # => 1
 
-scrabble = Scrabble.new('f')
+scrabble = new Scrabble('f')
 scrabble.score # => 4
 
-scrabble = Scrabble.new('street')
+scrabble = new Scrabble('street')
 scrabble.score # => 6
 
-scrabble = Scrabble.new('quirky')
+scrabble = new Scrabble('quirky')
 scrabble.score # => 22
 
-scrabble = Scrabble.new('OXYPHENBUTAZONE')
+scrabble = new Scrabble('OXYPHENBUTAZONE')
 scrabble.score # => 41
 ```
 

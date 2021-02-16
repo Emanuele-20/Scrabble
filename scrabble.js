@@ -32,7 +32,7 @@ class Scrabble{
         }
     };
 
-    score(){
+    get score(){
         let array = []
         if ((this.string == "") || (this.string == '/\t\n/') || (this.string === null)){
             return 0
