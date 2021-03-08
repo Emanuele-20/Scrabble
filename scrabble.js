@@ -33,13 +33,15 @@ class Scrabble{
     };
 
     get score(){
+        
         let array = []
+
         if ((this.string == "") || (this.string == '/\t\n/') || (this.string === null)){
             return 0
         } else {
             for(let i = 0; i < this.string.length; i++ ){
                 let letter = this.string[i] 
-                array.push(this.value[letter])
+                array.push(this.value[letter.toLowerCase()])
             }
             let result = array.reduce(function(a,b){
                 return a + b;
