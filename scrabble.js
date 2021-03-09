@@ -34,18 +34,20 @@ class Scrabble{
 
     get score(){
         
-        let array = []
+        let valueContainer = []
 
         if ((this.string == "") || (this.string == '/\t\n/') || (this.string === null)){
             return 0
         } else {
+
             for(let i = 0; i < this.string.length; i++ ){
                 let letter = this.string[i] 
-                array.push(this.value[letter.toLowerCase()])
+                valueContainer.push(this.value[letter.toLowerCase()])
             }
-            let result = array.reduce(function(a,b){
-                return a + b;
-            } ,0)
+            let result = valueContainer.reduce(function(accumulator, currentValue){
+                return accumulator + currentValue;
+            } , 0 )
+
             return result
         }
         

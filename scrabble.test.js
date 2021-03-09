@@ -27,17 +27,17 @@ describe("Scrabble", () => {
         expect(scrabble.score).toBe(4)
     })
 
-    it("Return 6 when 'street' as word is passed", () => {
+    it("Return 6 when 'street' is passed", () => {
         scrabble = new Scrabble('street')
         expect(scrabble.score).toBe(6)
     })
     
-    it("Return 22 when 'quirky' as word is passed", () => {
+    it("Return 22 when 'quirky' is passed", () => {
         scrabble = new Scrabble('quirky')
         expect(scrabble.score).toBe(22)
     })
 
-    it("Return 41 when 'quirky' as word is passed", () => {
+    it("Return 41 when 'OXYPHENBUTAZONE' is passed", () => {
         scrabble = new Scrabble('OXYPHENBUTAZONE')
         expect(scrabble.score).toBe(41)
     })
